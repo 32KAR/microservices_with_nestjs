@@ -7,7 +7,7 @@ export class AppService {
 
   sendSMS() {
     return this.twilioService.client.messages.create({
-      body: 'SMS Body, sent to the phone!',
+      body: 'OTP 123456',
       messagingServiceSid: process.env.MESSAGING_SERVICE_SID,
       to: process.env.TARGET_PHONE_NUMBER,
     });
