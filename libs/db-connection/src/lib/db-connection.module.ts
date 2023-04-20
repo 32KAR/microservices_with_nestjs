@@ -37,11 +37,11 @@ import { Charges_of_commission } from '../models/chargesOfCommission.model';
   imports: [
     SequelizeModule.forRoot({
       dialect: 'mysql',
-      host: 'b8vjnzsqxksvdf2pn3ty-mysql.services.clever-cloud.com',
-      port: 3306,
-      username: 'u2kcdzwuj06kmzdd',
-      password: 'dfFi3BjhngAxElbNCG6j',
-      database: 'b8vjnzsqxksvdf2pn3ty',
+      host: process.env.DB_HOST,
+      port: +process.env.DB_PORT,
+      username: process.env.DB_USERNAME,
+      password: process.env.DB_PASSWORD,
+      database: process.env.DB_NAME,
       autoLoadModels: true,
       synchronize: true,
       timezone: '+05:30',
