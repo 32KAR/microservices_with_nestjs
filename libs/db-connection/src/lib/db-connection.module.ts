@@ -37,11 +37,11 @@ import { Charges_of_commission } from '../models/chargesOfCommission.model';
   imports: [
     SequelizeModule.forRoot({
       dialect: 'mysql',
-      host: process.env.DB_HOST,
-      port: +process.env.DB_PORT,
-      username: process.env.DB_USERNAME,
-      password: process.env.DB_PASSWORD,
-      database: process.env.DB_NAME,
+      host: 'localhost',
+      port: 3306,
+      username: 'root',
+      password: '',
+      database: 'storehub',
       autoLoadModels: true,
       synchronize: true,
       timezone: '+05:30',
