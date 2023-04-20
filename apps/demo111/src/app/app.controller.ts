@@ -10,4 +10,9 @@ export class AppController {
   getData() {
     return this.appService.sendSMS();
   }
+
+  @Get('user')
+  getDataFromUser() {
+    return this.appService.getDataFromUser();
+  }
 }
