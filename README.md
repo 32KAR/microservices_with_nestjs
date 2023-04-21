@@ -19,3 +19,19 @@ Run `npx nx connect-to-nx-cloud` to enable [remote caching](https://nx.app) and 
 ## Further help
 
 Visit the [Nx Documentation](https://nx.dev) to learn more.
+
+## Set up
+npm i
+create .env file
+
+## Command for Create new microservices
+npx nx g @nrwl/nest:app microservices-name
+
+## Command for generate services, controller, module files
+npx nx g resource module-name
+
+## When you need to generate library in libs folder use below command. This code will you use in all microservices.
+npx nx generate @nrwl/nest:library library-name
+
+## When you import file from libs folder use below code from tsconfig.base.json.
+import { DbConnectionModule } from '@store-hub/db-connection';
